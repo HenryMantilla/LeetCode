@@ -11,3 +11,9 @@ class Solution:
                 aux += 1
             ans = max(ans, idx - aux + 1)
         return ans
+    
+s1 = "abcabcbb"
+s2 = "bbbbbbbb"
+s3 = "pwwkew"
+solution = Solution()
+solution.lengthOfLongestSubstring(s3)

@@ -11,3 +11,8 @@ class Solution:
         else:
             mean_idx = -(-len(full_array) // 2)
             return float(full_array[mean_idx-1])
+
+nums1 = [1,3]
+nums2 = [2]
+solution = Solution()
+solution.findMedianSortedArrays(nums1, nums2)
