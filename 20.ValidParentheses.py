@@ -1,0 +1,25 @@
+import time
+class Solution:
+    def isValid(self, s: str) -> bool:
+        open_br = ['(', '{', '[']
+        close_br = [')', '}', ']']
+        map = {")": "(", "}": "{", "]": "["}
+        stack = []
+        
+        for i in range(len(s)):
+            if s[i] in open_br:
+                stack.append(s[i])
+            elif s[i] in close_br:
+                if not stack or stack.pop() != map[s[i]]:
+                    return False
+                else:
+                    continue
+        return stack == []
+
+start = time.time()
+s = ["[", "{[]}","(]", "(){}}{", "()[]{}"]
+solution = Solution()
+for sol in s:
+   print(solution.isValid(sol))
+end = time.time()
+print(end-start)
