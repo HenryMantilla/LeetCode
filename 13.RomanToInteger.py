@@ -11,7 +11,6 @@ class Solution:
                 ans += current
         return ans
 
-#s = "MCMXCIV"
 s = "MCMXCIV"
 solution = Solution()
 print(solution.romanToInt(s))
