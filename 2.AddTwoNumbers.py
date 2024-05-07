@@ -35,7 +35,6 @@ class Solution:
             head = head.next
         print(tmp3)
 
-        
 
 l1 = ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9)))))))
 l2 = ListNode(9, ListNode(9, ListNode(9, ListNode(9))))
