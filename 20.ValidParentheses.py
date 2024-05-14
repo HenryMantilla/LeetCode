@@ -16,10 +16,7 @@ class Solution:
                     continue
         return stack == []
 
-start = time.time()
 s = ["[", "{[]}","(]", "(){}}{", "()[]{}"]
 solution = Solution()
 for sol in s:
    print(solution.isValid(sol))
-end = time.time()
-print(end-start)
